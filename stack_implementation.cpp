@@ -63,7 +63,7 @@ class stack{
     }
 
     int print(){
-        for(int i =0; i<size; i++){
+        for(int i =0; i<=top; i++){
             cout<<arr[i]<<" ";
         }
         cout<<endl;
@@ -78,7 +78,10 @@ int main(){
     st.push(8);
     st.push(25);
     st.push(9);
-
+    st.print();
+    st.pop();            //deletion
+    int ans =st.getsize();  
+    cout<<"size of stack is: "<<ans<<endl;
     st.print();
 
 return 0;
